@@ -296,6 +296,7 @@ a {
     position: relative;
     overflow: hidden;
     display: flex;
+    width: 100%;
 }
 
 .featured_image {
@@ -366,9 +367,8 @@ a {
 
 .social_image {
     position: relative;
-    top: 0;
+    top: 0.1rem;
     left: 0.4rem;
-    width: 30%;
 }
 
 .ellipse {

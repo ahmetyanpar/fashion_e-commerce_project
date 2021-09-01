@@ -212,6 +212,15 @@ textarea:focus, input:focus{
     font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 1500px) {
+    .product_detail_text {
+        font-size: 1rem;
+    }
+    .product_detail_text2 {
+        font-size: 0.8rem;
+    }
+}
+
 .product_color {
     text-align: center;
 }
@@ -268,6 +277,13 @@ textarea:focus, input:focus{
     background-color: white;
     color: black;
     font-weight: bold;
+}
+
+@media only screen and (max-width:1500px) {
+    .size_button {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
 }
 
 .size_button:hover {
@@ -407,4 +423,15 @@ textarea:focus, input:focus{
 .size_chart_btn:focus {
     border-color: none;
     box-shadow: none;
+}
+
+.customer-service-wrapper {
+    display: flex;
+}
+
+@media only screen and (max-width:600px) {
+    .customer-service-wrapper {
+        display: block;
+        text-align: center;
+    }
 }
