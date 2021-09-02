@@ -388,16 +388,15 @@ a {
     background: rgba(50, 50, 50, 0.50);
     visibility: hidden;
     opacity: 0;
-    text-align: center;
-}
-
-.view_icon {
-    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .featured_image_box:hover .hover_featured {
     visibility: visible;
     opacity: 1;  
+    transition: 0.8s;
 }
 
 .social_link:hover {
