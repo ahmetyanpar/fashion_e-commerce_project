@@ -311,6 +311,10 @@ a {
     }
 }
 
+.list-price {
+    font-weight: 400;
+}
+
 .price_tag {
     color: white;
     background-color: black;
@@ -347,16 +351,30 @@ a {
 
 .featured_container {
     position: relative;
+    font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width:600px) {
+    .featured_container {
+        font-size: 0.6rem;
+    }
+}
+
+.featured_item_brand {
+    color: #e13ed7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.5rem;
 }
 
 .featured_item_text {
-    font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 600px) {
-    .featured_item_text {
-        font-size: 1rem;
-    }
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .social {

@@ -103,14 +103,14 @@
                           Sort By
                         </button>
                         <ul class="dropdown-menu sort-by-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Price (Increasing)</a></li>
-                          <li><a class="dropdown-item" href="#">Price (Decreasing)</a></li>
-                          <li><a class="dropdown-item" href="#">Newest</a></li>
+                          <li><button class="dropdown-item" onclick="sortByPriceInc()">Price (Increasing)</button></li>
+                          <li><button class="dropdown-item">Price (Decreasing)</button></li>
+                          <li><button class="dropdown-item">Newest</button></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-3 mt-3 mt-md-0">
+                <div class="col-xl-2 col-md-3 mt-3">
                     <div class="flex-column">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
@@ -122,29 +122,35 @@
                               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="jackets">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="showAll" checked>
+                                        <label class="form-check-label" for="showAll">
+                                          Show All
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="jackets">
                                         <label class="form-check-label" for="jackets">
                                           Jackets
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="tshirts">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="tshirts">
                                         <label class="form-check-label" for="tshirts">
                                             T-shirts
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="trousers">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="trousers">
                                         <label class="form-check-label" for="trousers">
                                             Trousers
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="jeans">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault" id="jeans">
                                         <label class="form-check-label" for="jeans">
                                             Jeans
                                         </label>
-                                    </div>                                             
+                                    </div>    
                                 </div>
                               </div>
                             </div>
@@ -157,29 +163,29 @@
                               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                 <div class="accordion-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="brand1">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault1" id="brand1">
                                         <label class="form-check-label" for="brand1">
-                                            brand1
+                                            United Colors of Benetton
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="brand2">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault1" id="brand2">
                                         <label class="form-check-label" for="brand2">
-                                            brand2
+                                            H&M
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="brand3">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault1" id="brand3">
                                         <label class="form-check-label" for="brand3">
                                             brand3
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="brand4">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault1" id="brand4">
                                         <label class="form-check-label" for="brand4">
                                             brand4
                                         </label>
-                                    </div>                                             
+                                    </div>  
                                 </div>
                               </div>
                             </div>
@@ -191,58 +197,84 @@
                               </h2>
                               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                 <div class="accordion-body">
-                                    <ul class="product_color px-0 pt-4">
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: red;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: darkblue;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: brown;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button active">
-                                            <span class="inner_color" style="background-color: #f56fa1;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                            <button class="color_button">
-                                              <span class="inner_color" style="background-color: black;"></span>
-                                            </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: white;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: beige;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: teal;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: yellow;"></span>
-                                          </button>
-                                        </li>
-                                        <li>
-                                          <button class="color_button">
-                                            <span class="inner_color" style="background-color: green;"></span>
-                                          </button>
-                                        </li>
-                                      </ul>                          
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="red">
+                                    <label class="form-check-label" for="red">
+                                      Red
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="darkblue">
+                                    <label class="form-check-label" for="darkblue">
+                                      Dark Blue
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="brown">
+                                    <label class="form-check-label" for="brown">
+                                      Brown
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="lightgray">
+                                    <label class="form-check-label" for="lightgray">
+                                      Light Gray
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="fuchsia">
+                                    <label class="form-check-label" for="fuchsia">
+                                      Fuchsia
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="black">
+                                    <label class="form-check-label" for="black">
+                                      Black
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="white">
+                                    <label class="form-check-label" for="white">
+                                      White
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="beige">
+                                    <label class="form-check-label" for="beige">
+                                      Beige
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="teal">
+                                    <label class="form-check-label" for="teal">
+                                      Teal
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="yellow">
+                                    <label class="form-check-label" for="yellow">
+                                      Yellow
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="green">
+                                    <label class="form-check-label" for="green">
+                                      Green
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="multicolor">
+                                    <label class="form-check-label" for="multicolor">
+                                      Multicolor
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault2" id="orange">
+                                    <label class="form-check-label" for="orange">
+                                      Orange
+                                    </label>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -257,35 +289,35 @@
                               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                                 <div class="accordion-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="xsmall">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="xsmall">
                                         <label class="form-check-label" for="xsmall">
                                           XS
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="small">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="small">
                                         <label class="form-check-label" for="small">
                                             S
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="medium">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="medium">
                                         <label class="form-check-label" for="medium">
                                             M
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="large">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="large">
                                         <label class="form-check-label" for="large">
                                             L
                                         </label>
                                     </div>  
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="xlarge">
+                                        <input class="form-check-input" type="radio" value="" name="flexRadioDefault3" id="xlarge">
                                         <label class="form-check-label" for="xlarge">
                                             XL
                                         </label>
-                                    </div>                                                                                        
+                                    </div>   
                                 </div>
                               </div>
                             </div>
@@ -298,9 +330,9 @@
                               <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                                 <div class="accordion-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="cashmere">
-                                        <label class="form-check-label" for="cashmere">
-                                            Cashmere
+                                        <input class="form-check-input" type="checkbox" value="" id="polyester">
+                                        <label class="form-check-label" for="polyester">
+                                            Polyester
                                         </label>
                                     </div>
                                     <div class="form-check">
@@ -316,9 +348,9 @@
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="viscose">
-                                        <label class="form-check-label" for="viscose">
-                                            Viscose
+                                        <input class="form-check-input" type="checkbox" value="" id="leather">
+                                        <label class="form-check-label" for="leather">
+                                            Leather
                                         </label>
                                     </div>
                                     <div class="form-check">
@@ -364,21 +396,28 @@
                                     </div>                                                                                          
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="below250">
-                                        <label class="form-check-label" for="below250">
-                                            $200 - $250
+                                        <label class="form-check-label" for="above200">
+                                            $200 and above
                                         </label>
                                     </div>                                                                                          
                                 </div>
                               </div>
                             </div>
+                            <div class="mb-3" style="text-align: center;">
+                              <button class="filter_submit" onclick="filterShowAll(); filterBrand(); filterColor(); filterSize()">Filter</button>
+                              <button class="filter_submit" onclick="filterReset()">Reset</button>  
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9 mt-3">
+                <div class="col-xl-10 col-md-9 mt-3">
                 <div class="container">
-                    <div class="row row-cols-2 row-cols-md-4">
-                        <div class="col justify-content-center">
-                            <figure class="featured_container">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4" id="products">
+                        <div id="product1" data-value="19.95" class="col justify-content-center px-1 product tshirt red darkblue brown fuchsia black white beige teal yellow green medium large xlarge benetton cotton below50">  
+                          <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
                                 <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
@@ -387,493 +426,682 @@
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">UNITED COLORS OF BENETTON</p>
+                                <p class="featured_item_text mb-0">LONG SLEEVE T-SHIRT</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$19.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: red;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: darkblue;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: brown;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: #f56fa1;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                            <button class="list_color_button">
+                                              <span class="list_inner_color" style="background-color: black;"></span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: white;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: beige;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: teal;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: yellow;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: green;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product2" data-value="99.95" class="col justify-content-center px-1 product jacket darkgray orange brown small medium large benetton wool below100">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/benetton_brown_jacket.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">UNITED COLORS OF BENETTON</p>
+                                <p class="featured_item_text mb-0">COAT IN PURE SHETLAND WOOL</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$99.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: darkgray;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: orange;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: brown;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product3" data-value="59.95" class="col justify-content-center px-1 product trousers darkblue black wheat lightgray green brown xsmall small medium large xlarge benetton cotton below100">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/benetton_black_trousers.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">UNITED COLORS OF BENETTON</p>
+                                <p class="featured_item_text mb-0">SKINNY FIT VELVET TROUSERS</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$59.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: darkblue;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: black;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: wheat;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: lightgray;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                            <button class="list_color_button">
+                                              <span class="list_inner_color" style="background-color: green;"></span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: brown;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product4" data-value="69.95" class="col justify-content-center px-1 product tshirt multicolor small medium benetton cotton below100">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/benetton_multicolor_tshirt.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">UNITED COLORS OF BENETTON</p>
+                                <p class="featured_item_text mb-0">MULTICOLOR POLO TRICOT</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$69.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-image: linear-gradient(to right, blue, red, yellow);"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-image: linear-gradient(to right, green, white, pink);"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-image: linear-gradient(to right, red, green, blue);"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product5" data-value="59.95" class="col justify-content-center px-1 product jeans darkblue xsmall medium benetton cotton below100">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/benetton_jeans.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">UNITED COLORS OF BENETTON</p>
+                                <p class="featured_item_text mb-0">HIGH-WAISTED SKINNY FIT JEANS</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$59.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: darkblue;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product6" data-value="14.95" class="col justify-content-center px-1 product trousers black large xlarge hm polyester below50">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/hm_trousers.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">H&M</p>
+                                <p class="featured_item_text mb-0">TAILORED TROUSERS</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$14.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: black;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product7" data-value="229.95" class="col justify-content-center px-1 product jacket black medium xlarge hm leather above200">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/hm_leather_jacket.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">H&M</p>
+                                <p class="featured_item_text mb-0">LEATHER JACKET</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$229.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: black;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product8" data-value="12.95" class="col justify-content-center px-1 product tshirt black green white gray xsmall xlarge hm cotton below50">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/hm_green_tshirt.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">H&M</p>
+                                <p class="featured_item_text mb-0">OVERSIZED PRINTED T-SHIRT</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$12.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: darkgreen;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                            <button class="list_color_button">
+                                              <span class="list_inner_color" style="background-color: white;"></span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="list_color_button">
+                                              <span class="list_inner_color" style="background-color: black;"></span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="list_color_button">
+                                              <span class="list_inner_color" style="background-color: gray;"></span>
+                                            </button>
+                                        </li>                                        
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product9" data-value="24.95" class="col justify-content-center px-1 product jeans blue lightblue xsmall large hm cotton below50">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/hm_jeans.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">H&M</p>
+                                <p class="featured_item_text mb-0">WIDE HIGH JEANS</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$24.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: blue;"></span>
+                                          </button>
+                                        </li>
+                                        <li>
+                                            <button class="list_color_button">
+                                              <span class="list_inner_color" style="background-color: lightblue;"></span>
+                                            </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
+                        <div id="product10" data-value="39.95" class="col justify-content-center px-1 product jacket black medium large hm polyester below50">
                             <figure class="featured_container">
+                                <div class="list-fav-button-box">
+                                    <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                                </div>
                                 <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
+                                <img src="product_images/hm_black_jacket.jpg" class="img-fluid featured_image" alt="">
                                 <div class="hover_featured">
                                     <a href="productdetail.html">
                                     <img src="images/view_icon.png" class="view_icon" alt="">
                                     </a>
                                 </div>  
                                 </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
+                                <p class="featured_item_brand mb-0 pt-2">H&M</p>
+                                <p class="featured_item_text mb-0">TIE-BELT JACKET</p>
                                 <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
+                                    <p class="list-price mb-0">$39.95</p>
                                 </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
+                                <div>
+                                    <ul class="list_product_color px-0">
+                                        <li>
+                                          <button class="list_color_button">
+                                            <span class="list_inner_color" style="background-color: black;"></span>
+                                          </button>
+                                        </li>
+                                    </ul>                          
                                 </div>
                             </figure>
                         </div>
-                        <div class="col justify-content-center">
-                            <figure class="featured_container">
-                                <div class="featured_image_box">
-                                <img src="product_images/productimage1.jpg" class="img-fluid featured_image" alt="">
-                                <div class="hover_featured">
-                                    <a href="productdetail.html">
-                                    <img src="images/view_icon.png" class="view_icon" alt="">
-                                    </a>
-                                </div>  
-                                </div>
-                                <p class="featured_item_text pt-2 mb-0">Long Sleeve T-shirt</p>
-                                <div class="pt-2">
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill social_image" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                <div class="social">
-                                    <a href="" class="social_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill social_image" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle ellipse" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                    </svg>  
-                                    </a>
-                                </div>
-                                </div>
-                            </figure>
+                        <div id="product11" data-value="90.00" class="col justify-content-center px-1 product trousers black gray medium large northface polyester below100">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/northface_trousers.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">THE NORTH FACE</p>
+                              <p class="featured_item_text mb-0">SPEEDLIGHT TROUSERS</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$90.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: gray;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: black;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product12" data-value="65.00" class="col justify-content-center px-1 product trousers brown small medium large northface cotton below100">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/northface_brown_trousers.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">THE NORTH FACE</p>
+                              <p class="featured_item_text mb-0">CARGO TROUSERS</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$65.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: brown;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product13" data-value="13.20" class="col justify-content-center px-1 product tshirt white lightblue black small medium large xlarge northface cotton below50">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/northface_tshirt.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">THE NORTH FACE</p>
+                              <p class="featured_item_text mb-0">CROPPED SIMPLE DOME T-SHIRT</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$13.20</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: lightblue;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: white;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: black;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product14" data-value="40.00" class="col justify-content-center px-1 product tshirt black gray orange xsmall medium northface cotton below50">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/northface_black_tshirt.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">THE NORTH FACE</p>
+                              <p class="featured_item_text mb-0">ACTIVE TRAIL DAWN DREAM T-SHIRT</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$40.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: black;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: gray;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: orange;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product15" data-value="190.00" class="col justify-content-center px-1 product jacket gray black orange medium large xlarge northface polyester below200">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/northface_jacket.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">THE NORTH FACE</p>
+                              <p class="featured_item_text mb-0">DRYZZLE FUTURELIGHT™ JACKET</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$190.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: gray;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: black;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: orange;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product16" data-value="135.00" class="col justify-content-center px-1 product jacket blue red black small medium large xlarge northface polyester below150">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/northface_blue_jacket.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">THE NORTH FACE</p>
+                              <p class="featured_item_text mb-0">HIKESTELLER PARKA SHELL JACKET</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$135.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: blue;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: red;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: black;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product17" data-value="45.00" class="col justify-content-center px-1 product tshirt white small medium large xlarge tommy cotton below50">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/tommy_tshirt.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">TOMMY HILFIGER</p>
+                              <p class="featured_item_text mb-0">FLOWER PRINT LONG SLEEVE T-SHIRT</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$45.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: white;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
+                        </div>
+                        <div id="product18" data-value="40.00" class="col justify-content-center px-1 product tshirt fuchsia white xsmall small medium tommy cotton below50">
+                          <figure class="featured_container">
+                              <div class="list-fav-button-box">
+                                  <button class="list-fav-button bi bi-heart-fill px-0"></button>
+                              </div>
+                              <div class="featured_image_box">
+                              <img src="product_images/tommy_pink_tshirt.jpg" class="img-fluid featured_image" alt="">
+                              <div class="hover_featured">
+                                  <a href="productdetail.html">
+                                  <img src="images/view_icon.png" class="view_icon" alt="">
+                                  </a>
+                              </div>  
+                              </div>
+                              <p class="featured_item_brand mb-0 pt-2">TOMMY HILFIGER</p>
+                              <p class="featured_item_text mb-0">SMILEY BADGE LONG SLEEVE T-SHIRT</p>
+                              <div class="pt-2">
+                                  <p class="list-price mb-0">$40.00</p>
+                              </div>
+                              <div>
+                                  <ul class="list_product_color px-0">
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: #e13ed7;"></span>
+                                        </button>
+                                      </li>
+                                      <li>
+                                        <button class="list_color_button">
+                                          <span class="list_inner_color" style="background-color: white;"></span>
+                                        </button>
+                                      </li>
+                                  </ul>                          
+                              </div>
+                          </figure>
                         </div>
 
-    
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -985,6 +1213,8 @@
     <script src="js/jquery.3.6.0.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/productlist.js"></script>
+
 
 </body>
 </html>

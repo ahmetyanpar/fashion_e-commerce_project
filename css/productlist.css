@@ -1,3 +1,7 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif;
+}
+
 .sort-by-btn {
     float: right;
     background-color: white;
@@ -61,4 +65,64 @@
 
 .form-check-input:focus {
     box-shadow: none;
+}
+
+.list_product_color li {
+    display: inline-block;
+    padding-top: 0.5rem;
+}
+
+.list_color_button {
+    display: inline-flex;
+    border: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.list_inner_color {
+    display: block;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #d6d6d6;
+}
+
+.list-fav-button-box {
+    text-align: center;
+    float: right;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1000;
+}
+
+.list-fav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.list-fav-button:hover {
+    color: #e13ed7;
+    transition: 0.8s;
+}
+
+.filter_submit {
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+}
+
+.filter_submit:hover {
+    background-color: #e13ed7;
+    transition: 0.8s;
 }
