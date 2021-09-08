@@ -67,6 +67,10 @@ body {
     box-shadow: none;
 }
 
+.list_product_color {
+    overflow: hidden;
+}
+
 .list_product_color li {
     display: inline-block;
     padding-top: 0.5rem;
@@ -87,7 +91,6 @@ body {
     height: 0.8rem;
     width: 0.8rem;
     border-radius: 50%;
-    border: 1px solid #d6d6d6;
 }
 
 .list-fav-button-box {
